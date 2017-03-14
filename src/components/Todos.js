@@ -4,8 +4,6 @@ import AddTodo from './AddTodo'
 
 class Todos extends React.Component {
     render() {
-
-
         return  <div>
                     <br/>
                     <AddTodo />
@@ -17,9 +15,7 @@ class Todos extends React.Component {
                             <Todo description="Go on a hike"/>
                             <Todo description="Go to sleep"/>                                                                   
                         </ul>
-                </div>
-                
-            
+                </div> 
     }
 }
 
