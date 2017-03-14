@@ -1,18 +1,14 @@
-// import React from 'react'
-// import Todos from './Todos'
+import React from 'react'
 
-// class AddTodo extends React.Component {
-//     render() {
+class AddTodo extends React.Component {
+    render() {
+        return      <div className="input-group">
+                        <input type="text" className="form-control" placeholder="What do you need to do?"/>
+                        <span className="input-group-btn">
+                            <button className="btn btn-default" type="button">Add</button>
+                        </span>
+                    </div>
+    }
+}
 
-
-//         return
-//                     <div class="input-group">
-//                         <input type="text" class="form-control" placeholder="What do you need to do?"/>
-//                         <span class="input-group-btn">
-//                             <button class="btn btn-default" type="button">Add</button>
-//                         </span>
-//                     </div>
-//     }
-// }
-
-// export default AddTodo
+export default AddTodo
