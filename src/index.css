@@ -28,3 +28,7 @@ h1 {
 .done {
     text-decoration: line-through;
 }
+
+.glyphicon {
+    margin-right: 10px;
+}

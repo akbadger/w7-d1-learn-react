@@ -9,7 +9,7 @@ class Completed extends React.Component {
         return  <div className="container">
                     <div className="row">
                         <div className="col-sm-6 col-sm-offset-3">
-                    <h1 className="text-center">
+                    <h1 className="text-center text-uppercase">
                         Completed Tasks
                     </h1>
                     <span className="form-group">

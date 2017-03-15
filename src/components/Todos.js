@@ -63,11 +63,11 @@ toggleTodoComplete(todoId, isComplete) {
                     <div className="row">
                         <div className="col-sm-6 col-sm-offset-3">
                             <h1 className="text-center text-uppercase">To Do</h1>
-                            <span className="form-group">
+                            <div className="form-group">
                                 <button className="btn btn-default form-control" type="button" onClick={() => browserHistory.push('/Completed')}>
                                     View Completed Tasks
                                 </button>
-                            </span>
+                            </div>
                             <AddTodo addTodo={this.addTodo}/>
                                 <ul className="list-group">
                                     {todos}                                                                 
