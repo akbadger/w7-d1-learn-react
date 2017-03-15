@@ -2,12 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Load components - these will change for different projects
-import App from './components/App';
+// Load components
+import Routes from './Routes';
 import './index.css';
 
-
+// Render root component
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+    <Routes />,
+    document.getElementById('root')
 );
