@@ -8,7 +8,23 @@ img {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.2px;
   background: #f1f1f1;
 }
 
+
+h1 {
+    margin-top: 40px;
+}
+
+.label-success {
+    margin-left: 15px;
+    color: black;
+    background-color: lightgreen;
+    font-size: 11px;
+}
+
+.done {
+    text-decoration: line-through;
+}
