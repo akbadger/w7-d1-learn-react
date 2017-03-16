@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 // Loading in components
 import Todo from './Todo'
 import AddTodo from './AddTodo'
+import Nav from './Nav'
 
 class Todos extends React.Component {
 
@@ -63,11 +64,7 @@ toggleTodoComplete(todoId, isComplete) {
                     <div className="row">
                         <div className="col-sm-6 col-sm-offset-3">
                             <h1 className="text-center text-uppercase">To Do</h1>
-                            <div className="form-group">
-                                <button className="btn btn-default form-control" type="button" onClick={() => browserHistory.push('/Completed')}>
-                                    View Completed Tasks
-                                </button>
-                            </div>
+                            <Nav />
                             <AddTodo addTodo={this.addTodo}/>
                                 <ul className="list-group">
                                     {todos}                                                                 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from './Nav'
 import { browserHistory } from 'react-router'
 import { connect } from 'react-redux'
 
@@ -12,11 +13,8 @@ class Completed extends React.Component {
                     <h1 className="text-center text-uppercase">
                         Completed Tasks
                     </h1>
-                    <span className="form-group">
-                        <button className="btn btn-default form-control" type="button" onClick={() => browserHistory.push('/')}>
-                            View All Todos
-                        </button>
-                    </span>
+                    <Nav />
+                    
                         </div>
                     </div>
                 </div>
