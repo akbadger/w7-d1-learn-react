@@ -54,7 +54,7 @@ toggleTodoComplete(todoId, isComplete) {
     }
 
     render() {
-        let todos = this.props.sharedTodos.map((todo, key) => <Todo toggleTodoComplete={this.toggleTodoComplete} completed={todo.completed} id={todo.id} description={todo.todo} category={todo.category} key={key}/>)
+        let todos = this.props.sharedTodos.map((todo, key) => <Todo toggleTodoComplete={this.toggleTodoComplete} completed={todo.completed} id={todo.id} todo={todo.todo} category={todo.category} key={key}/>)
 
         if (todos.length === 0) {
             todos = <div className="alert alert-success text-center">What do you need to do?</div>
@@ -74,6 +74,20 @@ toggleTodoComplete(todoId, isComplete) {
                 </div> 
     }
 }
+
+// Add link deciphering for images vs URLs
+// var note ={
+//     'http://giphy.com'
+// } 
+// var isImage = false
+
+// if (note.link.slice(-4) === '.gif' || note.link.slice(-4) === '.png' || note.link.slice(-4) === '.jpg' ) {
+//     isImage= true
+// }
+
+// <img src={isImage ? note.link} /> : <a href={note.link} className="btn btn-default btn-block">visit {note.link}</a>
+
+
 
 // Map shared Redux state to props
 const mapStateToProps = (redux) => {

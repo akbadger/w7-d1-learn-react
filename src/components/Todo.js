@@ -11,7 +11,7 @@ class Todo extends React.Component {
                                 {/*<input type="checkbox" onChange={(e) => this.props.toggleTodoComplete(this.props.id, e.target.checked)} checked={this.props.completed === 'yes' ? true : false} />*/}
                                 {/*button type="button"*/}
                                 <span onClick={(e) => this.props.toggleTodoComplete(this.props.id, this.props.completed !== 'yes')}>{this.props.completed === 'yes' ? <i className="glyphicon glyphicon-check"></i> : <i className="glyphicon glyphicon-unchecked"></i>}</span> 
-                                <span className={this.props.completed === 'yes' ? 'done' : ''}>{this.props.description} </span>
+                                <span className={this.props.completed === 'yes' ? 'done' : ''}>{this.props.todo} </span>
                                 <span className="label label-success categoryLabel">{this.props.category}</span>
                             </label>
                         </div>
@@ -22,12 +22,12 @@ class Todo extends React.Component {
 //this.props.completed !== 'yes'
 
 
-Todo.propTypes = {
-    id: React.PropTypes.any.isRequired,
-    completed: React.PropTypes.string.isRequired,
-    description: React.PropTypes.string.isRequired,
-    category: React.PropTypes.string.isRequired,
-    // toggleTodoComplete: React.propType.func.isRequired
-}
+// Todo.propTypes = {
+//     id: React.PropTypes.any.isRequired,
+//     completed: React.PropTypes.string.isRequired,
+//     todo: React.PropTypes.string.isRequired,
+//     category: React.PropTypes.string.isRequired,
+//     // toggleTodoComplete: React.propType.func.isRequired
+// }
 
 export default Todo
